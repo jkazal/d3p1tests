@@ -7,6 +7,8 @@ namespace SolrCsharpTest
 {
     class IndexProduct
     {
+        [SolrUniqueKey("id")]
+        public string SolrId { get; set; }
         [SolrField("productId")]
         public int Id { get; set; }
         [SolrField("productName")]
